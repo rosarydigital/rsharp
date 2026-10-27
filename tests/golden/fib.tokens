@@ -1,0 +1,63 @@
+1:1	'fn'	fn
+1:4	Identifier	fib
+1:7	'('	(
+1:8	Identifier	n
+1:9	':'	:
+1:11	Identifier	int
+1:14	')'	)
+1:16	'->'	->
+1:19	Identifier	int
+1:22	':'	:
+1:23	Newline
+2:1	Indent
+2:5	'if'	if
+2:8	Identifier	n
+2:10	'<'	<
+2:12	Int	2
+2:13	':'	:
+2:14	Newline
+3:1	Indent
+3:9	'return'	return
+3:16	Identifier	n
+3:17	Newline
+4:1	Dedent
+4:5	'return'	return
+4:12	Identifier	fib
+4:15	'('	(
+4:16	Identifier	n
+4:18	'-'	-
+4:20	Int	1
+4:21	')'	)
+4:23	'+'	+
+4:25	Identifier	fib
+4:28	'('	(
+4:29	Identifier	n
+4:31	'-'	-
+4:33	Int	2
+4:34	')'	)
+4:35	Newline
+6:1	Dedent
+6:1	'fn'	fn
+6:4	Identifier	main
+6:8	'('	(
+6:9	')'	)
+6:10	':'	:
+6:11	Newline
+7:1	Indent
+7:5	'for'	for
+7:9	Identifier	i
+7:11	'in'	in
+7:14	Int	0
+7:15	'..'	..
+7:17	Int	10
+7:19	':'	:
+7:20	Newline
+8:1	Indent
+8:9	Identifier	print
+8:14	'('	(
+8:15	String	"fib({i}) = {fib(i)}"
+8:36	')'	)
+8:37	Newline
+9:1	Dedent
+9:1	Dedent
+9:1	Eof

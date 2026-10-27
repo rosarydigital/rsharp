@@ -54,7 +54,6 @@ private:
     void lex_char();
     void lex_operator();
 
-    const SourceFile& file_;
     DiagnosticSink& diags_;
     std::string_view text_;
     size_t pos_ = 0;

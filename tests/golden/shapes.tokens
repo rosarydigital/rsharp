@@ -1,0 +1,75 @@
+1:1	'struct'	struct
+1:8	Identifier	Point
+1:13	':'	:
+1:14	Newline
+2:1	Indent
+2:5	Identifier	x
+2:6	':'	:
+2:8	Identifier	float
+2:13	Newline
+3:5	Identifier	y
+3:6	':'	:
+3:8	Identifier	float
+3:13	Newline
+5:1	Dedent
+5:1	'impl'	impl
+5:6	Identifier	Point
+5:11	':'	:
+5:12	Newline
+6:1	Indent
+6:5	'fn'	fn
+6:8	Identifier	length
+6:14	'('	(
+6:15	Identifier	self
+6:19	')'	)
+6:21	'->'	->
+6:24	Identifier	float
+6:29	':'	:
+6:30	Newline
+7:1	Indent
+7:9	'return'	return
+7:16	Identifier	sqrt
+7:20	'('	(
+7:21	Identifier	self
+7:25	'.'	.
+7:26	Identifier	x
+7:28	'*'	*
+7:30	Identifier	self
+7:34	'.'	.
+7:35	Identifier	x
+7:37	'+'	+
+7:39	Identifier	self
+7:43	'.'	.
+7:44	Identifier	y
+7:46	'*'	*
+7:48	Identifier	self
+7:52	'.'	.
+7:53	Identifier	y
+7:54	')'	)
+7:55	Newline
+9:1	Dedent
+9:1	Dedent
+9:1	'fn'	fn
+9:4	Identifier	main
+9:8	'('	(
+9:9	')'	)
+9:10	':'	:
+9:11	Newline
+10:1	Indent
+10:5	'let'	let
+10:9	Identifier	p
+10:11	'='	=
+10:13	Identifier	Point
+10:18	'('	(
+10:19	Float	3.0
+10:22	','	,
+10:24	Float	4.0
+10:27	')'	)
+10:28	Newline
+11:5	Identifier	print
+11:10	'('	(
+11:11	String	"length = {p.length():.2f}"
+11:38	')'	)
+11:39	Newline
+12:1	Dedent
+12:1	Eof

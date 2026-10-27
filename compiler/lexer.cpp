@@ -30,7 +30,7 @@ bool valid_digit(char base, char c) {
 }  // namespace
 
 Lexer::Lexer(const SourceFile& file, DiagnosticSink& diags)
-    : file_(file), diags_(diags), text_(file.text()) {}
+    : diags_(diags), text_(file.text()) {}
 
 // ---------------------------------------------------------------- helpers
 
@@ -354,6 +354,7 @@ void Lexer::lex_char() {
     }
     if (text_[pos_] == '\\') pos_ += 2;
     else pos_ += utf8_len(static_cast<unsigned char>(text_[pos_]));
+    if (pos_ > n) pos_ = n;  // escape or multi-byte char cut off by end of file
 
     if (pos_ < n && text_[pos_] == '\'') {
         ++pos_;
