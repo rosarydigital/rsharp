@@ -1,0 +1,8 @@
+{
+  "cmake.buildDirectory": "${workspaceFolder}/build",
+  "cmake.generator": "Ninja",
+  "files.associations": { "*.rsh": "plaintext" },
+  "clangd.arguments": ["--compile-commands-dir=build"],
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true
+}
